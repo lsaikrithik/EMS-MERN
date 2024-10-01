@@ -1,5 +1,3 @@
-# EMS-MERN
-
 # Employee Management System
 
 ## Overview
