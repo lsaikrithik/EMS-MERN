@@ -1,5 +1,3 @@
-// controllers/employeeController.js
-
 import Employee from '../models/Employee.js'; // Import your Employee model
 import multer from 'multer'; // Import multer
 import path from 'path';
@@ -23,7 +21,7 @@ export const addEmployee = async (req, res) => {
 
     try {
         const { name, email, mobile, designation, gender, course } = req.body;
-        const image = req.file ? req.file.path : ''; // Use uploaded image path
+        const image = req.file ? `uploads\\${req.file.filename}` : ''; // Use uploaded image path
 
         const newEmployee = new Employee({
             userId: req.user._id,
@@ -74,7 +72,7 @@ export const editEmployee = async (req, res) => {
     try {
         const { employeeId } = req.params;
         const { name, email, mobile, designation, gender, course } = req.body;
-        const image = req.file ? req.file.path : undefined;
+        const image = req.file ? `uploads\\${req.file.filename}` : undefined;
 
         const updatedData = {
             name,

@@ -115,6 +115,7 @@ const List = () => {
                 <thead>
                     <tr>
                         <th className='py-2 border'>Unique Id</th>
+                        <th className='border cursor-pointer' onClick={() => handleSort('imageUrl')}>Image</th> {/* New Column for Image */}
                         <th className='border cursor-pointer' onClick={() => handleSort('name')}>Name</th>
                         <th className='border cursor-pointer' onClick={() => handleSort('email')}>Email</th>
                         <th className='border'>Mobile No</th>
@@ -129,6 +130,18 @@ const List = () => {
                     {currentEmployees.map((employee) => (
                         <tr key={employee._id} className='text-center border-t'>
                             <td className='py-2 border'>{employee._id}</td>  {/* Unique Id */}
+                            <td className='border'>
+                                {employee.image ? (
+                                    <img
+                                        src={`http://localhost:5000/${employee.image}`}
+                                        alt={employee.name}
+                                        className="w-20 h-20 object-cover rounded mx-auto"
+                                        style={{ maxWidth: '100px', maxHeight: '100px' }} // Added styles to fit the image within the table
+                                    />
+                                ) : (
+                                    <span>No Image</span>
+                                )}
+                            </td> {/* Image */}
                             <td className='border'>{employee.name}</td>       {/* Name */}
                             <td className='border'>{employee.email}</td>      {/* Email */}
                             <td className='border'>{employee.mobile}</td>     {/* Mobile No */}
