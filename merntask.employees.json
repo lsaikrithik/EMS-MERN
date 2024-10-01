@@ -1,0 +1,88 @@
+[{
+  "_id": {
+    "$oid": "66faf914f1fd12417d538bc1"
+  },
+  "userId": {
+    "$oid": "66f87f6bb373032eeee85ff0"
+  },
+  "name": "user1",
+  "email": "user1@gmail.com",
+  "mobile": 9384618966,
+  "designation": "HR",
+  "gender": "M",
+  "course": "MCA",
+  "image": null,
+  "createAt": {
+    "$date": "2024-09-30T19:16:36.986Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-30T19:16:36.986Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66fb08bd005078ace07bc63b"
+  },
+  "userId": {
+    "$oid": "66f87f6bb373032eeee85ff0"
+  },
+  "name": "user3",
+  "email": "user3@gmail.com",
+  "mobile": 7894561223,
+  "designation": "HR",
+  "gender": "M",
+  "course": "BCA",
+  "image": "",
+  "createAt": {
+    "$date": "2024-09-30T20:23:25.537Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-30T20:23:25.537Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66fb6d03e8cac5b9388af042"
+  },
+  "userId": {
+    "$oid": "66f87f6bb373032eeee85ff0"
+  },
+  "name": "abc231zed",
+  "email": "user5@gmail.com",
+  "mobile": "7894125633",
+  "designation": "HR",
+  "gender": "M",
+  "course": "BSC",
+  "image": "",
+  "createAt": {
+    "$date": "2024-10-01T03:31:15.290Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-01T03:31:15.303Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66fb7c2d3fb745f9e11c8b5c"
+  },
+  "userId": {
+    "$oid": "66f87f6bb373032eeee85ff0"
+  },
+  "name": "zxycba123",
+  "email": "userzxy@gmail.com",
+  "mobile": "7412589634",
+  "designation": "HR",
+  "gender": "M",
+  "course": "MCA",
+  "image": "",
+  "createAt": {
+    "$date": "2024-10-01T04:35:57.411Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-01T04:35:57.417Z"
+  },
+  "__v": 0
+}]
